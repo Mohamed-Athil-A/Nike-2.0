@@ -7,8 +7,8 @@ import { socialMedia } from "../contants";
 const Footer = () => {
   return (
     <footer className="max-container">
-      <div className="flex justify-between items-center gap-20 flex-wrap max-lg:flex-col pb-20 max-sm:flex-col ">
-        <div className="flex flex-col items-start max-sm:justify-center max-sm:items-center">
+      <div className="flex justify-between gap-20 flex-wrap max-lg:flex-col pb-20 max-sm:flex-col ">
+        <div className="flex flex-col items-start">
           <a href="/">
             <img
               src={footerLogo}
@@ -18,11 +18,11 @@ const Footer = () => {
               className="hover:bg-gradient-to-r from-purple-500 to-blue-500 bg-transparent"
             />
           </a>
-          <p className="text-white-400 sm:max-w-sm leading-7 mt-6 font-montserrat text-base max-sm:text-center">
+          <p className="text-white-400 sm:max-w-sm leading-7 mt-6 font-montserrat text-base ">
             Get shoes ready for the new term at your nearest Nike store. Find
             Your perfect Size In Store. Get Rewards
           </p>
-          <div className="mt-5 flex items-center gap-5  ">
+          <div className="mt-5 flex items-center gap-5">
             {socialMedia.map((social) => (
               <SocialMedia key={social.src} {...social} />
             ))}
